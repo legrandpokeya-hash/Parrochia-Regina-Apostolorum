@@ -1,0 +1,55 @@
+{
+  "name": "Parrocchia Regina Apostolorum",
+  "short_name": "Regina Apostolorum",
+  "description": "Parrocchia Santa Maria Regina Apostolorum — Via Giuseppe Ferrari 1, Roma",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e8",
+  "theme_color": "#132943",
+  "lang": "it",
+  "categories": ["religion", "lifestyle"],
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "Regina Apostolorum.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://www.reginadegliapostoli.it/RDA/Multimedia/Content/viaFerrari.jpg",
+      "sizes": "800x600",
+      "type": "image/jpeg",
+      "label": "Via Giuseppe Ferrari"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Orari Messe",
+      "short_name": "Orari",
+      "url": "./#vita",
+      "description": "Orari delle celebrazioni"
+    },
+    {
+      "name": "Contatti",
+      "short_name": "Contatti",
+      "url": "./#contact",
+      "description": "Informazioni di contatto"
+    }
+  ]
+}

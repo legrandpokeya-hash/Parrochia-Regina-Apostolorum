@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#132943">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Regina Apostolorum">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="Regina Apostolorum.webp">
+  <meta name="description" content="Parrocchia Santa Maria Regina Apostolorum - Via Giuseppe Ferrari, Roma.">
+  <title>Parrocchia Regina Apostolorum</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.paypal.com https://www.paypalobjects.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://formspree.io https://www.paypal.com; worker-src 'self';">
+  <script defer src="payment-config.js"></script>
+  <script defer src="events.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skipLink">Salta al contenuto principale</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Parrocchia Regina Apostolorum">
+        <img src="Regina Apostolorum.webp" alt="Logo Parrocchia Regina Apostolorum">
+        <span data-i18n="brand.name">Parrocchia Regina Apostolorum</span>
+      </a>
+
+      <div class="lang-switch" role="group" aria-label="Selettore lingua">
+        <button class="lang-btn active" data-lang="it" aria-label="Italiano">
+          <img src="https://flagcdn.com/w40/it.png" alt="" loading="lazy" width="20" height="14">
+        </button>
+        <button class="lang-btn" data-lang="en" aria-label="English">
+          <img src="https://flagcdn.com/w40/gb.png" alt="" loading="lazy" width="20" height="14">
+        </button>
+        <button class="lang-btn" data-lang="fr" aria-label="Français">
+          <img src="https://flagcdn.com/w40/fr.png" alt="" loading="lazy" width="20" height="14">
+        </button>
+      </div>
+
+      <button id="dark-toggle" class="dark-toggle" aria-label="Attiva modalità scura" aria-pressed="false" title="Tema scuro">&#9680;</button>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-label="Apri menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="#home" data-i18n="nav.home">Inizio</a>
+        <a href="#comunita" data-i18n="nav.community">Comunità</a>
+        <a href="#vita" data-i18n="nav.life">Vita parrocchiale</a>
+        <a href="#eventi" data-i18n="nav.events">Agenda</a>
+        <a href="#pastorale" data-i18n="nav.pastoral">Servizi pastorali</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galleria</a>
+        <a href="#contact" data-i18n="nav.contact">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero reveal">
+      <div class="hero-slides" aria-hidden="true">
+        <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/viaFerrari.jpg" alt="" loading="lazy">
+        <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/6.jpg" alt="" loading="lazy">
+        <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/9.jpg" alt="" loading="lazy">
+        <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/12.jpg" alt="" loading="lazy">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="kicker" data-i18n="hero.kicker">Parrocchia Santa Maria</p>
+        <h1 data-i18n="hero.title">Regina Apostolorum</h1>
+        <p data-i18n="hero.subtitle">Comunità di fede e servizio nel cuore di Roma, in Via Giuseppe Ferrari 1.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#vita" data-i18n="hero.ctaMass">Orari delle Messe</a>
+          <a class="btn btn-outline" href="#contact" data-i18n="hero.ctaContact">Contattaci</a>
+        </div>
+        <ul class="hero-meta" aria-label="Informazioni rapide">
+          <li data-i18n="hero.meta1">Messe feriali: 7:45 - 10:00 - 18:30</li>
+          <li data-i18n="hero.meta2">Adorazione e confessioni ogni giorno</li>
+          <li data-i18n="hero.meta3">Via Giuseppe Ferrari, 1 - Roma</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="comunita" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="community.title">La comunità parrocchiale</h2>
+          <p class="section-intro" data-i18n="community.intro">Storia, identità e servizio pastorale della Parrocchia Santa Maria Regina Apostolorum.</p>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <h3 data-i18n="community.aboutTitle">Chi siamo</h3>
+            <p data-i18n="community.aboutP1">La parrocchia è stata eretta il 18 aprile 1936 ed è affidata alla Società dell'Apostolato Cattolico (Pallottini).</p>
+            <p data-i18n="community.aboutP2">È luogo di preghiera, formazione e carità con una presenza pastorale costante per famiglie, giovani e adulti.</p>
+          </div>
+          <figure class="about-image">
+            <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/viaFerrari.jpg" alt="Sede parrocchiale Via Giuseppe Ferrari" loading="lazy">
+            <figcaption data-i18n="community.caption">Via Giuseppe Ferrari, 1 - Roma</figcaption>
+          </figure>
+        </div>
+
+        <div class="cards clergy-block">
+          <article class="card"><h3 data-i18n="community.clergy1Title">Parroco</h3><p data-i18n="community.clergy1Text">Don Nicola Gallucci</p></article>
+          <article class="card"><h3 data-i18n="community.clergy2Title">Vice Parroco</h3><p data-i18n="community.clergy2Text">Don Alberto Houodanou Dagbedji</p></article>
+          <article class="card"><h3 data-i18n="community.clergy3Title">Collaboratori</h3>
+            <ul>
+              <li data-i18n="community.clergy3Text1">Don Clement Sabi Baraga</li>
+              <li data-i18n="community.clergy3Text2">Don Tomasz Gradzki</li>
+              <li data-i18n="community.clergy3Text3">Don Constantin Legrand TALE POKEYA</li>
+              <li data-i18n="community.clergy3Text4">Fr Armand Dieudonné ONDOUA</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="vita" class="section alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="life.title">Vita parrocchiale</h2>
+          <p class="section-intro" data-i18n="life.intro">Orari liturgici, attività, notizie ed eventi della comunità.</p>
+        </div>
+
+        <div class="module">
+          <h3 data-i18n="life.hoursTitle">Orari e servizi</h3>
+          <div class="tabs" role="tablist" aria-label="Orari Messe">
+            <button class="tab active" data-tab="winter" role="tab" aria-selected="true" id="tab-btn-winter" aria-controls="tab-winter" data-i18n="life.tabWinter">Periodo invernale</button>
+            <button class="tab" data-tab="summer" role="tab" aria-selected="false" id="tab-btn-summer" aria-controls="tab-summer" data-i18n="life.tabSummer">Luglio - Agosto</button>
+          </div>
+
+          <div id="tab-winter" class="tab-panel active" role="tabpanel" aria-labelledby="tab-btn-winter" tabindex="0">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th data-i18n="life.tableDays">Giorni</th><th data-i18n="life.tableTimes">Orari</th></tr></thead>
+                <tbody>
+                  <tr><td data-i18n="life.wFer">Feriale</td><td>7:45 - 10:00 - 18:30</td></tr>
+                  <tr><td data-i18n="life.wPre">Prefestivo</td><td>18:30</td></tr>
+                  <tr><td data-i18n="life.wFes">Festivo</td><td>9:00 - 10:00 - 11:00 - 12:15 - 18:30</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="tab-summer" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-summer" tabindex="0">
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th data-i18n="life.tableDays">Giorni</th><th data-i18n="life.tableTimes">Orari</th></tr></thead>
+                <tbody>
+                  <tr><td data-i18n="life.wFer">Feriale</td><td>7:45</td></tr>
+                  <tr><td data-i18n="life.wPre">Prefestivo</td><td>18:30</td></tr>
+                  <tr><td data-i18n="life.wFes">Festivo</td><td>9:00 - 11:00 - 18:30</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="confessioni"><strong data-i18n="life.confTitle">Confessioni:</strong> <span data-i18n="life.confText">tutti i giorni 9:00-12:00 e 16:00-19:00</span></p>
+        </div>
+
+        <div class="activity-list">
+          <article><h3 data-i18n="life.act1Title">Catechismo</h3><p data-i18n="life.act1Text">Prima Comunione e Cresima, domenica dalle 10:00.</p></article>
+          <article><h3 data-i18n="life.act2Title">Catechesi adulti</h3><p data-i18n="life.act2Text">Martedì 18:30-20:00, cammino sinodale.</p></article>
+          <article><h3 data-i18n="life.act3Title">Centro di ascolto</h3><p data-i18n="life.act3Text">Gruppo Vincenziane, mercoledì 9:00-12:00.</p></article>
+        </div>
+
+        <div class="news-wrap">
+          <h3 data-i18n="life.newsTitle">Notizie e aggiornamenti</h3>
+          <div class="news-filters" role="toolbar" aria-label="Filtra notizie">
+            <button class="news-filter active" data-filter="all" data-i18n="life.filterAll">Tutte</button>
+            <button class="news-filter" data-filter="liturgia" data-i18n="life.filterLit">Liturgia</button>
+            <button class="news-filter" data-filter="formazione" data-i18n="life.filterFor">Formazione</button>
+            <button class="news-filter" data-filter="carita" data-i18n="life.filterCar">Carità</button>
+          </div>
+          <div class="news-grid">
+            <article class="news-card" data-category="liturgia"><span class="news-date">18 Aprile 2026</span><h3 data-i18n="life.news1Title">Messa per la comunità parrocchiale</h3><p data-i18n="life.news1Text">Celebrazione serale con intenzione per famiglie, giovani e anziani.</p></article>
+            <article class="news-card" data-category="formazione"><span class="news-date">22 Aprile 2026</span><h3 data-i18n="life.news2Title">Incontro di catechesi per adulti</h3><p data-i18n="life.news2Text">Percorso di approfondimento biblico e confronto comunitario.</p></article>
+            <article class="news-card" data-category="carita"><span class="news-date">27 Aprile 2026</span><h3 data-i18n="life.news3Title">Raccolta alimentare mensile</h3><p data-i18n="life.news3Text">Supporto alle famiglie in difficoltà con distribuzione viveri.</p></article>
+          </div>
+        </div>
+
+        <div id="upcoming-events-grid" class="event-grid-dynamic"></div>
+      </div>
+    </section>
+
+    <section id="pastorale" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="pastoral.title">Servizi pastorali</h2>
+          <p class="section-intro" data-i18n="pastoral.intro">Richieste di intenzioni di messa, donazioni e accompagnamento spirituale.</p>
+        </div>
+
+        <div class="pastorale-grid">
+          <article class="pastorale-card">
+            <h3 data-i18n="pastoral.massTitle">Intenzioni di Messa e Offerta</h3>
+            <p data-i18n="pastoral.massIntro">Indica la tua intenzione; la parrocchia ti contatterà per data e dettagli.</p>
+            <form class="pastorale-form" data-form-label="Intenzione di messa" data-formspree="https://formspree.io/f/XXXXXXXX" novalidate>
+              <label for="intention-nom" data-i18n="form.fullname">Nome completo</label>
+              <input id="intention-nom" name="nom" type="text" required>
+              <label for="intention-email" data-i18n="form.email">E-mail</label>
+              <input id="intention-email" name="email" type="email" required>
+              <label for="intention-date" data-i18n="form.massDate">Data desiderata</label>
+              <input id="intention-date" name="date" type="date">
+              <label for="intention-time" data-i18n="form.massTime">Orario della Messa desiderato</label>
+              <input id="intention-time" name="orario" type="time">
+              <label for="intention-message" data-i18n="form.intention">Intenzione</label>
+              <textarea id="intention-message" name="message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-primary" data-i18n="form.sendRequest">Invia la richiesta</button>
+            </form>
+          </article>
+
+          <article class="pastorale-card">
+            <h3 data-i18n="pastoral.donTitle">Offerte e Donazioni</h3>
+            <p data-i18n="pastoral.donIntro">Il tuo sostegno aiuta liturgia, carità e attività pastorali quotidiane.</p>
+
+            <div class="pay-widget" id="donation-widget">
+
+              <!-- Importo -->
+              <div class="pay-section">
+                <p class="pay-label" data-i18n="pay.chooseAmount">Scegli un importo</p>
+                <div class="pay-presets" role="group" aria-label="Importi suggeriti">
+                  <button class="pay-preset" data-amount="5">€5</button>
+                  <button class="pay-preset" data-amount="10">€10</button>
+                  <button class="pay-preset active" data-amount="25">€25</button>
+                  <button class="pay-preset" data-amount="50">€50</button>
+                  <button class="pay-preset" data-amount="100">€100</button>
+                </div>
+                <div class="pay-custom-wrap">
+                  <span class="pay-currency-sym">€</span>
+                  <input type="number" id="pay-custom-amount" class="pay-custom-input"
+                         min="1" step="1"
+                         placeholder="Altro importo…"
+                         data-i18n-placeholder="pay.custom"
+                         aria-label="Importo personalizzato">
+                </div>
+              </div>
+
+              <!-- Causale / intenzione optionnelle -->
+              <div class="pay-section">
+                <label class="pay-label" for="pay-intention" data-i18n="pay.intentionLabel">
+                  Intenzione o causale <span class="pay-optional">(opzionale)</span>
+                </label>
+                <input type="text" id="pay-intention" class="pay-intention-input"
+                       placeholder="Es. Per la salute di Maria…"
+                       data-i18n-placeholder="pay.intentionPh"
+                       maxlength="120">
+              </div>
+
+              <!-- Méthodes de paiement disponibles -->
+              <div class="pay-methods-info" aria-label="Metodi accettati">
+                <span class="brand-visa">VISA</span>
+                <span class="brand-mc"></span>
+                <span class="brand-amex">AMEX</span>
+                <span class="brand-gpay">G Pay</span>
+                <span class="brand-apple"> Pay</span>
+                <span class="brand-paypal-pill"><span class="pp-b">Pay</span><span class="pp-y">Pal</span></span>
+              </div>
+
+              <!-- Conteneur boutons PayPal (injecté par le SDK) -->
+              <div id="paypal-button-container"></div>
+
+              <!-- États -->
+              <div id="pay-loading" class="pay-loading">
+                <span class="pay-spinner"></span>
+                <span data-i18n="pay.loading">Caricamento sistema di pagamento…</span>
+              </div>
+
+              <div id="pay-not-configured" class="pay-notice" style="display:none">
+                <p>⚙️ <span data-i18n="pay.notConfigured">Inserisci il Client ID PayPal in <code>script.js</code> → PAYMENT_CONFIG per attivare i pagamenti.</span></p>
+              </div>
+
+              <div id="pay-success" class="pay-success" aria-live="polite" style="display:none">
+                <div class="pay-success-icon">✓</div>
+                <h4 data-i18n="pay.successTitle">Grazie per la tua generosità!</h4>
+                <p data-i18n="pay.successMsg">Il pagamento è stato ricevuto. La parrocchia ti è riconoscente.</p>
+                <button class="pay-reset-btn" id="pay-reset" data-i18n="pay.newDonation">Effettuare un'altra offerta</button>
+              </div>
+
+              <div class="pay-security">
+                🔒 <span data-i18n="pay.secure">Pagamento gestito da PayPal · Nessun dato bancario salvato su questo sito</span>
+              </div>
+
+            </div>
+          </article>
+
+          <article class="pastorale-card">
+            <h3 data-i18n="pastoral.supportTitle">Accompagnamento e Ascolto Spirituale</h3>
+            <p data-i18n="pastoral.supportIntro">Richiedi un colloquio con un sacerdote o con un accompagnatore spirituale della parrocchia.</p>
+            <form class="pastorale-form" data-form-label="Accompagnamento spirituale" data-formspree="https://formspree.io/f/YYYYYYYY" novalidate>
+              <label for="accomp-nom" data-i18n="form.fullname">Nome completo</label>
+              <input id="accomp-nom" name="nom" type="text" required>
+              <label for="accomp-tel" data-i18n="form.phone">Telefono</label>
+              <input id="accomp-tel" name="telephone" type="tel" required>
+              <label for="accomp-pref" data-i18n="form.availability">Disponibilità preferita</label>
+              <input id="accomp-pref" name="disponibilite" type="text" placeholder="Es. martedì sera" data-i18n-placeholder="form.availabilityPlaceholder">
+              <label for="accomp-message" data-i18n="form.request">La tua richiesta</label>
+              <textarea id="accomp-message" name="message" rows="4" required></textarea>
+              <button type="submit" class="btn btn-primary" data-i18n="form.bookMeeting">Richiedi un appuntamento</button>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="gallery.title">Galleria</h2>
+          <p class="section-intro" data-i18n="gallery.intro">Uno sguardo alla vita della nostra comunità.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/6.jpg" alt="Foto 1" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/7.jpg" alt="Foto 2" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/8.jpg" alt="Foto 3" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/9.jpg" alt="Foto 4" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/10.jpg" alt="Foto 5" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/11.jpg" alt="Foto 6" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/12.jpg" alt="Foto 7" loading="lazy">
+          <img src="https://www.reginadegliapostoli.it/RDA/Multimedia/Content/13.jpg" alt="Foto 8" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="eventi" class="section alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="events.archiveTitle">Archivio eventi</h2>
+          <p class="section-intro" data-i18n="events.archiveIntro">Consulta gli eventi passati della comunità parrocchiale.</p>
+        </div>
+        <div id="past-events-grid" class="event-grid-dynamic"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="contact.title">Contatti</h2>
+          <p class="section-intro" data-i18n="contact.intro">Siamo disponibili per informazioni, appuntamenti e richieste pastorali.</p>
+        </div>
+        <div class="contact-grid">
+          <article><h3 data-i18n="contact.addressTitle">Indirizzo</h3><p data-i18n="contact.addressText">Via Giuseppe Ferrari, 1 - 00195 Roma</p></article>
+          <article><h3 data-i18n="contact.phoneTitle">Telefono</h3><p><a data-copy="+39 06 375923" href="tel:+3906375923">+39 06 375923</a></p></article>
+          <article><h3 data-i18n="contact.emailTitle">Email</h3><p><a data-copy="parrocchiaviaferrari@gmail.com" href="mailto:parrocchiaviaferrari@gmail.com">parrocchiaviaferrari@gmail.com</a></p></article>
+          <article><h3 data-i18n="contact.websiteTitle">Sito</h3><p><a href="https://www.reginadegliapostoli.it" target="_blank" rel="noopener noreferrer">www.reginadegliapostoli.it</a></p></article>
+          <article><h3 data-i18n="contact.mapTitle">Come arrivare</h3><p><a href="https://maps.google.com/?q=Via+Giuseppe+Ferrari+1+Roma" target="_blank" rel="noopener noreferrer" data-i18n="contact.mapLink">Apri su Google Maps</a></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> <span data-i18n="footer.text">Parrocchia Regina Apostolorum - Roma</span></p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galleria fotografica" tabindex="-1">
+    <button id="lightbox-close" class="close-btn" aria-label="Chiudi">x</button>
+    <button id="lightbox-prev" class="nav-btn prev" aria-label="Precedente">&#8249;</button>
+    <img id="lightbox-image" src="" alt="">
+    <button id="lightbox-next" class="nav-btn next" aria-label="Successiva">&#8250;</button>
+  </div>
+
+  <div id="pwa-banner" class="pwa-banner" role="complementary" aria-label="Installation de l'application">
+    <span data-i18n="pwa.text">Installa l'app sulla tua schermata principale</span>
+    <div class="pwa-actions">
+      <button id="pwa-install" class="btn btn-primary" data-i18n="pwa.install">Installa</button>
+      <button id="pwa-dismiss" class="pwa-dismiss" aria-label="Chiudi" data-i18n="pwa.dismiss">✕</button>
+    </div>
+  </div>
+  <button id="scroll-top" class="scroll-top" aria-label="Torna su">&#8679;</button>
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <div id="event-modal"
+       class="event-modal"
+       aria-hidden="true"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="event-modal-title"
+       tabindex="-1">
+    <div class="event-modal-box">
+      <button id="event-modal-close" class="event-modal-close" aria-label="Chiudi annuncio">✕</button>
+      <div class="event-modal-tag" id="event-modal-tag"></div>
+      <h2 id="event-modal-title" class="event-modal-title"></h2>
+      <div class="event-modal-date" id="event-modal-date"></div>
+      <p class="event-modal-desc" id="event-modal-desc"></p>
+      <div class="event-modal-footer">
+        <a href="#vita" class="btn btn-primary" id="event-modal-cta"></a>
+        <button id="event-modal-noshow" class="event-modal-noshow"></button>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
