@@ -7,7 +7,6 @@ services:
   - type: web
     name: parrocchia-regina-apostolorum
     env: static
-    buildCommand: ""
     staticPublishPath: .
 
     headers:
