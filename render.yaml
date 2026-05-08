@@ -1,0 +1,39 @@
+# ══════════════════════════════════════════════════════════════════════════════
+#  Render — Configuration déploiement & en-têtes de sécurité
+#  Parrocchia Santa Maria Regina Apostolorum
+# ══════════════════════════════════════════════════════════════════════════════
+
+services:
+  - type: web
+    name: parrocchia-regina-apostolorum
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-XSS-Protection
+        value: "1; mode=block"
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: "camera=(), microphone=(), geolocation=()"
+      - path: /*
+        name: Strict-Transport-Security
+        value: "max-age=31536000; includeSubDomains; preload"
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' https://www.paypal.com https://www.paypalobjects.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; frame-src https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self' https://formspree.io https://www.paypal.com; worker-src 'self';"
+
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
